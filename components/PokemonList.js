@@ -37,7 +37,7 @@ export default function PokemonList({ navigation }) {
             onChangeText={ text=> setInput(text)}
           />
           <View style={styles.buttonWrapper}>
-            <Button style={styles.button} title='search' onPress={()=>setSearch(false)}/>
+            <Button style={styles.button} color="#ff5c5c" title='search' onPress={()=>setSearch(false)}/>
           </View>
         </View>
       :<View style={styles.buttonWrapper}>
@@ -82,6 +82,7 @@ const styles = StyleSheet.create({
   },
 
   writeWrapper: {
+    paddingLeft: 10,
     flexDirection: 'column',
     height: 100,
     justifyContent: 'flex-start',
@@ -105,6 +106,6 @@ const styles = StyleSheet.create({
     borderRadius: 60,
     borderColor: '#f50',
     borderWidth: 1,
-  }
+  },
 
 });
