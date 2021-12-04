@@ -12,8 +12,8 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="default">
-        <Stack.Screen name="default" component={PokemonList} />
+      <Stack.Navigator initialRouteName="PokeDex">
+        <Stack.Screen name="PokeDex" component={PokemonList} />
         <Stack.Screen name="Detail" component={Pokemon} />
       </Stack.Navigator>
   </NavigationContainer>
